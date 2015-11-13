@@ -1,4 +1,4 @@
-Todo::Application.routes.draw do
+TodoExample::Application.routes.draw do
   resources :users do
     resources :todos do
     end

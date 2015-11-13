@@ -14,10 +14,10 @@
 ActiveRecord::Schema.define(version: 20151112212002) do
 
   create_table "todos", force: true do |t|
+    t.integer  "user_id"
     t.text     "title"
     t.text     "description"
     t.boolean  "completed"
-    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
